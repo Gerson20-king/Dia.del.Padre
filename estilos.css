@@ -1,0 +1,109 @@
+ /* Fuentes de Google para un toque elegante */
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap');
+
+        body {
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Contenedor de la carta */
+        .carta-container {
+            background-color: #ffffff;
+            max-width: 550px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border: 2px solid #1e3c72;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Detalles decorativos en las esquinas */
+        .carta-container::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px dashed #2a5298;
+            border-radius: 10px;
+            pointer-events: none;
+        }
+
+        /* Encabezado */
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            color: #1e3c72;
+            font-size: 3.5rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .subtitulo {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #777;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* Icono decorativo (un corazón o corbata hecho con CSS/Emoji) */
+        .decoracion-icono {
+            font-size: 2rem;
+            color: #2a5298;
+            margin-bottom: 20px;
+            animation: flotar 3s ease-in-out infinite;
+        }
+
+        /* Cuerpo del texto */
+        .contenido {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        .contenido p {
+            margin-bottom: 15px;
+            text-indent: 20px;
+        }
+
+        /* Despedida y firma */
+        .despedida {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.2rem;
+            color: #1e3c72;
+            margin-bottom: 5px;
+        }
+
+    
+
+        /* Animación sutil para el icono */
+        @keyframes flotar {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Detalles Responsivos */
+        @media (max-width: 480px) {
+            .carta-container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
